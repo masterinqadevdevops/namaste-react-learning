@@ -2,3 +2,5 @@
 .DS
 .MacOS
 /node_modules
+.parcel-cache
+/dist
