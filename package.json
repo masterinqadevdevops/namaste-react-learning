@@ -1,0 +1,23 @@
+{
+  "name": "react",
+  "version": "1.0.0",
+  "description": "This is Namaste React by Akshay Saini",
+  "main": "app.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masterinqadevdevops/namaste-react-learning.git"
+  },
+  "keywords": [],
+  "author": "Anil Simha",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/masterinqadevdevops/namaste-react-learning/issues"
+  },
+  "homepage": "https://github.com/masterinqadevdevops/namaste-react-learning#readme",
+  "devDependencies": {
+    "parcel": "^2.15.2"
+  }
+}
