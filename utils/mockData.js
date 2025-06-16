@@ -1,27 +1,3 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-
-const Headers = () => {
-	return (
-		<div className="headers">
-			<div className="logo-container">
-				<img
-					className="brand-logo"
-					src="https://png.pngtree.com/template/20191014/ourmid/pngtree-pin-food-delivery-map-location-delivery-logo-concept-image_318151.jpg"
-					alt="Logo"
-				/>
-			</div>
-			<div className="nav-items">
-				<ul>
-					<li>Home</li>
-					<li>About</li>
-					<li>Menu</li>
-					<li>Cart</li>
-				</ul>
-			</div>
-		</div>
-	);
-};
 const restList = [
 	{
 		info: {
@@ -726,46 +702,5 @@ const restList = [
 		},
 	},
 ];
-const Body = () => {
-	return (
-		<div className="body">
-			<div className="search">search bar</div>
-			<div className="restro-cards-container">
-				{restList.map((restaurant) => (
-					<RestroCards key={restaurant.info.id} resData={restaurant} />
-				))}
-			</div>
-		</div>
-	);
-};
-const RestroCards = (prop) => {
-	const { resData } = prop;
-	const { cloudinaryImageId, name, cuisines, avgRating, deliveryTime } =
-		resData?.info;
-	return (
-		<div className="restro-cards" style={{ backgroundColor: '#f0f0f0' }}>
-			<img
-				className="rest-img"
-				src={
-					'https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/' +
-					cloudinaryImageId
-				}
-				alt="KFC"
-			/>
-			<h3>{name}</h3>
-			<h3>{cuisines.join(',')}</h3>
-			<h3>{avgRating} Stars</h3>
-			<h3>{resData.info.sla.deliveryTime} Minutes</h3>
-		</div>
-	);
-};
-const AppLayout = () => {
-	return (
-		<div className="app">
-			<Headers />
-			<Body />
-		</div>
-	);
-};
 
-ReactDOM.createRoot(document.getElementById('root')).render(<AppLayout />);
+export default restList;
