@@ -37,8 +37,7 @@
 
 }
 .filter-btn{
-    padding: 10px;
-    margin: 10px;
+    
     cursor: pointer;
 }
 .rest-img{
@@ -50,4 +49,31 @@
 .restro-cards:hover{
     cursor: pointer;
     border: 1px solid black;
+}
+.shimmer-container{
+    display: flex;
+}
+.shimmer-card{
+    margin: 20px;
+    width: 200px;
+    height: 400px;
+    background-color: antiquewhite;
+    flex-wrap: wrap;
+    display: flex;
+}
+.login-btn{
+    padding: 0px 10px;
+    width: 100x;
+    height: 70px;
+    margin: 10px;
+    cursor: pointer;
+    background-color: blue;
+    color: white;
+    border: none;
+}
+.filter{
+    display: flex;
+}
+.search{
+    margin-right: 10px;
 }
